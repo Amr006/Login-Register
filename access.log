@@ -61,3 +61,8 @@
 ::1 - - [22/Aug/2023:13:19:15 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 19057 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
 ::1 - - [22/Aug/2023:13:19:15 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
 ::1 - - [22/Aug/2023:13:19:15 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+::1 - - [22/Aug/2023:17:10:15 +0000] "POST /api/login HTTP/1.1" 403 53 "-" "PostmanRuntime/7.32.3"
+::1 - - [22/Aug/2023:17:15:02 +0000] "POST /api/register HTTP/1.1" 200 56 "-" "PostmanRuntime/7.32.3"
+::1 - - [22/Aug/2023:17:15:47 +0000] "GET /api/verify/64e4ed16bc946d0ce60d9dd7/454f5416-4a0a-4433-8031-2b08c1e5db1f64e4ed16bc946d0ce60d9dd7 HTTP/1.1" 200 35 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"
+::1 - - [22/Aug/2023:17:16:01 +0000] "POST /api/login HTTP/1.1" 200 321 "-" "PostmanRuntime/7.32.3"
+::1 - - [22/Aug/2023:17:16:38 +0000] "POST /api/login HTTP/1.1" 200 321 "-" "PostmanRuntime/7.32.3"
