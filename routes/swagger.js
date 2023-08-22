@@ -257,11 +257,11 @@
  *         schema:
  *           type: object
  *           properties:
- *             forgot_pass_username:
+ *             forgot_pass_email:
  *               type: string
  *               description: The username of the user for password reset.
  *         example:
- *           forgot_pass_username: john_doe
+ *           forgot_pass_email: john_doe
  *     responses:
  *       200:
  *         description: Password reset email sent.

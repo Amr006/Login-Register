@@ -1143,7 +1143,7 @@ const verify = (req, res, next) => {
               if (result) {
                 User.updateOne(
                   { _id: userId },
-                  { verified: true },
+                  { Verified: true },
                   { new: true }
                 )
                   .then((result) => {
@@ -1194,7 +1194,7 @@ const login = (req, res, next) => {
   User.findOne({ Email: req.body.email_log })
     .then((user) => {
       if (user) {
-        if (!user.verified) {
+        if (!user.Verified) {
           res.status(403).json({
             status: "failed",
             message: "Email is not verified",
@@ -1211,7 +1211,7 @@ const login = (req, res, next) => {
               }
               if (result) {
                 let token = jwt.sign(
-                  { Id: user.id, Name: user.Name, Role: user.role },
+                  { Id: user.id, Name: user.Name, Role: user.Role },
                   process.env.SECRET_KEY,
                   {
                     expiresIn: "30h",
@@ -1223,7 +1223,7 @@ const login = (req, res, next) => {
                 res.status(200).json({
                   message: "login successfully !",
                   token: token,
-                  role: user.role,
+                  role: user.Role,
                   csrfToken: csrfToken
                 });
               } else {
@@ -1246,9 +1246,9 @@ const login = (req, res, next) => {
 };
 
 const forgetPasswordRequest = (req, res, next) => {
-  const userName = req.body.forgot_pass_username;
+  const email = req.body.forgot_pass_email;
 
-  User.findOne({ Name: userName })
+  User.findOne({ Email: email })
     .then((result) => {
       if (result) {
         sendVerificationEmail(result, "forgotPassword", res);

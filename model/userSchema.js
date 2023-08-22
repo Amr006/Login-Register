@@ -26,11 +26,11 @@ const userSchema = Schema({
     type: String,
     required: true,
   },
-  verified: {
+  Verified: {
     type: Boolean,
     default: false,
   },
-  role: {
+  Role: {
     type: String,
     default: "User",
   },
