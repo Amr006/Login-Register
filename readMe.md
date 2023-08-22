@@ -29,6 +29,8 @@ The "Login && Register" project is a secure user authentication and registration
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Login-and-Register.git
-   cd Login-and-Register
-   change `.env.example` to `.env` and update its values with your own
+   1)git clone https://github.com/your-username/Login-and-Register.git
+   2)cd Login-and-Register
+   3)run npm i
+   4)change `.env.example` to `.env` and update its values with your own
+   4)run npm start  Or  nodemon server.js
